@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrea Nexo Studio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap">
+<style>
+/* Documento legal sobrio: una columna de lectura, encabezados con el color de la marca */
+:root { --bg:#f6f7fb; --fg:#161925; --muted:#5a6072; --accent:#1f6fe0; --rule:#d9dce6;
+  --display:"Space Grotesk", "Segoe UI", sans-serif; --body:"Inter", "Segoe UI", system-ui, sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0e1118; --fg:#e7e9f0; --muted:#9aa1b4; --accent:#6aa5ff; --rule:#262b38; color-scheme: dark } }
+:root[data-theme="dark"] { --bg:#0e1118; --fg:#e7e9f0; --muted:#9aa1b4; --accent:#6aa5ff; --rule:#262b38; color-scheme: dark }
+body { background:var(--bg); color:var(--fg); font-family:var(--body); font-size:16px; line-height:1.65;
+  padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:40px 64px; }
+main { max-width:68ch; margin:0 auto; display:grid; gap:28px; }
+header { display:grid; gap:6px; border-bottom:1px solid var(--rule); padding-bottom:20px; }
+.eyebrow { font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); font-weight:600; }
+h1 { font-family:var(--display); font-size:clamp(28px, 5vw, 38px); line-height:1.15; margin:0; text-wrap:balance; }
+h2 { font-family:var(--display); font-size:20px; margin:0 0 6px; color:var(--accent); }
+p, ul { margin:0; } ul { padding-left:20px; display:grid; gap:4px; }
+.meta { color:var(--muted); font-size:14px; }
+section { display:grid; gap:8px; }
+.lang { border-top:1px solid var(--rule); padding-top:28px; display:grid; gap:28px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">Nexo Futuro Tech</span>
+    <h1>Andrea Nexo Studio</h1>
+    <p class="meta">Herramienta privada de publicación de Nexo Futuro Tech</p>
+  </header>
+  <section>
+    <p>Andrea Nexo Studio publica los videos educativos de tecnología y ciencia de Nexo Futuro Tech en YouTube y en TikTok (@nexo.futuro.tech), con autorización de su creador. No es un servicio abierto al público.</p>
+  </section>
+  <section>
+    <h2>Canales</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/@NexoFuturoTech">YouTube: Nexo Futuro Tech</a></li>
+      <li><a href="https://www.tiktok.com/@nexo.futuro.tech">TikTok: @nexo.futuro.tech</a></li>
+    </ul>
+  </section>
+  <section>
+    <h2>Documentos</h2>
+    <ul>
+      <li><a href="terminos/">Términos de servicio · Terms of Service</a></li>
+      <li><a href="privacidad/">Política de privacidad · Privacy Policy</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
